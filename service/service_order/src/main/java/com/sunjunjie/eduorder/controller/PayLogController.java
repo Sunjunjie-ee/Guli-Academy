@@ -10,10 +10,10 @@ import java.util.Map;
 
 /**
  * <p>
- * 支付日志表 前端控制器
+ * 支付日志表controller
  * </p>
  *
- * @author testjava
+ * @author sunjunjie
  * @since 2020-03-13
  */
 @RestController
@@ -39,6 +39,7 @@ public class PayLogController {
     public R queryPayStatus(@PathVariable String orderNo) {
         Map<String,String> map = payLogService.queryPayStatus(orderNo);
         if(map == null) {
+            orderNo.charAt(2);
             return R.error().message("支付出错了");
         }
         //如果返回map里面不为空，通过map获取订单状态

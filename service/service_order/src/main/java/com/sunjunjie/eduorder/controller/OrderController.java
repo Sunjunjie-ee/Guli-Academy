@@ -14,12 +14,13 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * <p>
- * 订单 前端控制器
+ * 订单contorller
  * </p>
  *
- * @author testjava
+ * @author sunjunjie
  * @since 2021-06-25
  */
+
 @RestController
 @RequestMapping("/eduorder/order")
 @CrossOrigin
@@ -38,6 +39,7 @@ public class OrderController {
         return R.success().data("orderId", orderNo);
     }
 
+    //获取订单信息
     @GetMapping("getOrderInfo/{orderId}")
     public R getOrderInfo(@PathVariable String orderId){
         QueryWrapper<Order> wrapper = new QueryWrapper<>();

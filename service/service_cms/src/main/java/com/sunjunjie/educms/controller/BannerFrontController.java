@@ -12,6 +12,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * <p>
+ * 前台banner controller
+ * </p>
+ *
+ * @author sunjunjie
+ * @since 2021-06-21
+ */
+
 @RestController
 @RequestMapping("/educms/bannerfront")
 @CrossOrigin
@@ -19,6 +28,7 @@ public class BannerFrontController {
     @Autowired
     private CrmBannerService bannerService;
 
+    //将所有banner放入redis
     @Cacheable(key="'selectIndexList'", value = "banner")
     @GetMapping("getAllBanner")
     public R getAllCrmBanner(){

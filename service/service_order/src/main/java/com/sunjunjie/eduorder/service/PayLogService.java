@@ -10,7 +10,7 @@ import java.util.Map;
  * 支付日志表 服务类
  * </p>
  *
- * @author testjava
+ * @author sunjunjie
  * @since 2021-06-25
  */
 public interface PayLogService extends IService<PayLog> {

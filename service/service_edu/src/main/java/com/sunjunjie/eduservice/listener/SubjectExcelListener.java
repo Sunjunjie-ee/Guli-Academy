@@ -8,6 +8,16 @@ import com.sunjunjie.eduservice.bean.excel.SubjectData;
 import com.sunjunjie.eduservice.service.EduSubjectService;
 import com.sunjunjie.servicebase.exceptionhandler.GuliException;
 
+/**
+ * <p>
+ * 导入课程分类监听器
+ * </p>
+ *
+ * @author sunjunjie
+ * @since 2021-06-16
+ */
+
+
 public class SubjectExcelListener extends AnalysisEventListener<SubjectData>{
 
     public EduSubjectService subjectService;

@@ -17,6 +17,15 @@ import org.springframework.web.bind.annotation.RestController;
 import java.net.URLEncoder;
 import java.util.HashMap;
 
+/**
+ * <p>
+ * 微信扫码登陆 controller
+ * </p>
+ *
+ * @author sunjunjie
+ * @since 2021-06-22
+ */
+
 @CrossOrigin
 @Controller
 @RequestMapping("/api/ucenter/wx")

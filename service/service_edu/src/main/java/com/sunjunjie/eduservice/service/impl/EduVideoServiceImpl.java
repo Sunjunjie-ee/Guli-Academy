@@ -18,13 +18,15 @@ import java.util.List;
  * 课程视频 服务实现类
  * </p>
  *
- * @author testjava
+ * @author sunjunjie
  * @since 2021-06-16
  */
 @Service
 public class EduVideoServiceImpl extends ServiceImpl<EduVideoMapper, EduVideo> implements EduVideoService {
+
     @Autowired
     private VodClient vodClient;
+
     @Override
     public void removeVideoByCourseId(String courseId) {
         QueryWrapper<EduVideo> wrapperVideo = new QueryWrapper<>();
@@ -32,10 +34,9 @@ public class EduVideoServiceImpl extends ServiceImpl<EduVideoMapper, EduVideo> i
         wrapperVideo.select("video_source_id");
         List<EduVideo> eduVideoList = baseMapper.selectList(wrapperVideo);
         List<String> videoIds = new ArrayList<>();
-        for(int i = 0; i < eduVideoList.size(); i++){
-            EduVideo eduVideo = eduVideoList.get(i);
+        for (EduVideo eduVideo : eduVideoList) {
             String videoSourceId = eduVideo.getVideoSourceId();
-            if(StringUtils.isEmpty(videoSourceId)){
+            if (StringUtils.isEmpty(videoSourceId)) {
                 videoIds.add(videoSourceId);
             }
         }

@@ -37,11 +37,8 @@ public class JwtUtils {
         return JwtToken;
     }
 
-    /**
-     * 判断token是否存在与有效
-     * @param jwtToken
-     * @return
-     */
+
+    //判断token是否存在与有效
     public static boolean checkToken(String jwtToken) {
         if(StringUtils.isEmpty(jwtToken)) return false;
         try {
@@ -53,11 +50,8 @@ public class JwtUtils {
         return true;
     }
 
-    /**
-     * 判断token是否存在与有效
-     * @param request
-     * @return
-     */
+
+    //判断token是否存在与有效
     public static boolean checkToken(HttpServletRequest request) {
         try {
             String jwtToken = request.getHeader("token");
@@ -70,24 +64,12 @@ public class JwtUtils {
         return true;
     }
 
-    /**
-     * 根据token获取会员id
-     * @param request
-     * @return
-     */
+    //根据token获取会员id
     public static String getMemberIdByJwtToken(HttpServletRequest request) {
         String jwtToken = request.getHeader("token");
         if(StringUtils.isEmpty(jwtToken)) return "";
         Jws<Claims> claimsJws = Jwts.parser().setSigningKey(APP_SECRET).parseClaimsJws(jwtToken);
         Claims claims = claimsJws.getBody();
         return (String)claims.get("id");
-    }
-
-    @Test
-    public void test(){
-        String id = 123456 + "";
-        String nickname = "SSSS";
-        String jwtToken = getJwtToken(id, nickname);
-        System.out.println(jwtToken);
     }
 }

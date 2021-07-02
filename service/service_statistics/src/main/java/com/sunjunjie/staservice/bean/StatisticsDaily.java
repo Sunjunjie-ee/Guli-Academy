@@ -18,9 +18,10 @@ import lombok.experimental.Accessors;
  * 网站统计日数据
  * </p>
  *
- * @author testjava
+ * @author sunjunjie
  * @since 2021-06-26
  */
+
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)

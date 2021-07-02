@@ -10,12 +10,13 @@ import java.util.Map;
 
 /**
  * <p>
- * 网站统计日数据 前端控制器
+ * 网站统计日数据 controller
  * </p>
  *
- * @author testjava
+ * @author sunjunjie
  * @since 2021-06-26
  */
+
 @RestController
 @RequestMapping("/staservice/sta")
 @CrossOrigin

@@ -13,10 +13,10 @@ import java.util.List;
 
 /**
  * <p>
- * 课程科目 前端控制器
+ * 课程科目controller
  * </p>
  *
- * @author testjava
+ * @author sunjunjie
  * @since 2021-06-16
  */
 @RestController
@@ -25,6 +25,8 @@ import java.util.List;
 public class EduSubjectController {
     @Autowired
     private EduSubjectService subjectService;
+
+    //添加课程
     @PostMapping("addSubject")
     public R addsubject(MultipartFile file){
         subjectService.saveSubject(file, subjectService);

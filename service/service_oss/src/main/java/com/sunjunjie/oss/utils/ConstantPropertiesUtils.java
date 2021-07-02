@@ -4,6 +4,15 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+/**
+ * <p>
+ * 阿里云oss仓库信息
+ * </p>
+ *
+ * @author sunjunjie
+ * @since 2021-06-18
+ */
+
 @Component
 public class ConstantPropertiesUtils implements InitializingBean {
     @Value("${aliyun.oss.file.endpoint}")

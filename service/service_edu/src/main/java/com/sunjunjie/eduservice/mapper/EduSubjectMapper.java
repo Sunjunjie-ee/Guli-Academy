@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * 课程科目 Mapper 接口
  * </p>
  *
- * @author testjava
+ * @author sunjunjie
  * @since 2021-06-16
  */
 public interface EduSubjectMapper extends BaseMapper<EduSubject> {

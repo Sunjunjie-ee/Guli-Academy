@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * <p>
- * 课程视频 前端控制器
+ * 课程视频controller
  * </p>
  *
  * @author testjava
@@ -28,12 +28,14 @@ public class EduVideoController {
     @Autowired
     private VodClient vodClient;
 
+    //添加课程视频
     @PostMapping("addVideo")
     public R addVideo(@RequestBody EduVideo eduVideo){
         videoService.save(eduVideo);
         return R.success();
     }
 
+    //删除课程视频
     @DeleteMapping("{id}")
     public R deleteVideo(@PathVariable String id){
         EduVideo eduVideo = videoService.getById(id);

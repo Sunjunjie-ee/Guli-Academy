@@ -12,6 +12,15 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * <p>
+ * message controller
+ * </p>
+ *
+ * @author sunjunjie
+ * @since 2021-06-17
+ */
+
 @RestController
 @RequestMapping("/edumsm/msm")
 @CrossOrigin
@@ -23,6 +32,7 @@ public class MsmController {
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
 
+    //发送邮件
     @GetMapping("send/{emailaddress}")
     public R sendMsm(@PathVariable String emailaddress){
         String code = redisTemplate.opsForValue().get(emailaddress);

@@ -9,6 +9,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+/**
+ * <p>
+ * 阿里云oss仓库controller
+ * </p>
+ *
+ * @author sunjunjie
+ * @since 2021-06-18
+ */
+
 @RestController
 @RequestMapping("/eduoss/fileoss")
 @CrossOrigin
@@ -17,6 +26,7 @@ public class OssController {
     @Autowired
     private OssService ossService;
 
+    //上传文件
     @PostMapping
     public R uploadOssFile(MultipartFile file){
         String url = ossService.uploadFileAvatar(file);

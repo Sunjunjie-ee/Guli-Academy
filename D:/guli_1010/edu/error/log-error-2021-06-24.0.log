@@ -1,6 +1,0 @@
-2021-06-24 12:16:02.468 [main] ERROR com.baomidou.mybatisplus.core.MybatisConfiguration - mapper[com.sunjunjie.eduservice.mapper.EduCourseMapper.getPublishCourseInfo] is ignored, because it exists, maybe from xml file
-2021-06-24 12:33:14.867 [main] ERROR com.baomidou.mybatisplus.core.MybatisConfiguration - mapper[com.sunjunjie.eduservice.mapper.EduCourseMapper.getPublishCourseInfo] is ignored, because it exists, maybe from xml file
-2021-06-24 19:42:56.274 [main] ERROR com.baomidou.mybatisplus.core.MybatisConfiguration - mapper[com.sunjunjie.eduservice.mapper.EduCourseMapper.getPublishCourseInfo] is ignored, because it exists, maybe from xml file
-2021-06-24 20:39:07.277 [main] ERROR com.baomidou.mybatisplus.core.MybatisConfiguration - mapper[com.sunjunjie.eduservice.mapper.EduCourseMapper.getPublishCourseInfo] is ignored, because it exists, maybe from xml file
-2021-06-24 20:44:41.216 [main] ERROR com.baomidou.mybatisplus.core.MybatisConfiguration - mapper[com.sunjunjie.eduservice.mapper.EduCourseMapper.getPublishCourseInfo] is ignored, because it exists, maybe from xml file
-2021-06-24 22:49:49.361 [main] ERROR com.baomidou.mybatisplus.core.MybatisConfiguration - mapper[com.sunjunjie.eduservice.mapper.EduCourseMapper.getPublishCourseInfo] is ignored, because it exists, maybe from xml file

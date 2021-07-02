@@ -6,6 +6,15 @@ import lombok.Data;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * <p>
+ * 统一的返回结果类
+ * </p>
+ *
+ * @author sunjunjie
+ * @since 2021-06-11
+ */
+
 @Data
 public class R {
     private Boolean success;

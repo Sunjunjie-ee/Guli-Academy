@@ -1,2 +1,0 @@
-2021-06-27 00:08:12.708 [main] ERROR com.baomidou.mybatisplus.core.MybatisConfiguration - mapper[com.sunjunjie.eduservice.mapper.EduCourseMapper.getPublishCourseInfo] is ignored, because it exists, maybe from xml file
-2021-06-27 16:04:35.343 [main] ERROR com.baomidou.mybatisplus.core.MybatisConfiguration - mapper[com.sunjunjie.eduservice.mapper.EduCourseMapper.getPublishCourseInfo] is ignored, because it exists, maybe from xml file

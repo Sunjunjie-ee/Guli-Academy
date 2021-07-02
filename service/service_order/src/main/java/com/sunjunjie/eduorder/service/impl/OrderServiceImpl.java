@@ -1,7 +1,7 @@
 package com.sunjunjie.eduorder.service.impl;
 
-import com.sunjunjie.commonutils.CourseWebVoOrder;
-import com.sunjunjie.commonutils.UcenterMemberOrder;
+import com.sunjunjie.commonutils.vo.CourseWebVoOrder;
+import com.sunjunjie.commonutils.vo.UcenterMemberOrder;
 import com.sunjunjie.eduorder.bean.Order;
 import com.sunjunjie.eduorder.client.EduClient;
 import com.sunjunjie.eduorder.client.UcenterClient;
@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
  * 订单 服务实现类
  * </p>
  *
- * @author testjava
+ * @author sunjunjie
  * @since 2021-06-25
  */
 @Service

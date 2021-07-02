@@ -3,7 +3,7 @@ package com.sunjunjie.educenter.controller;
 
 import com.sunjunjie.commonutils.JwtUtils;
 import com.sunjunjie.commonutils.R;
-import com.sunjunjie.commonutils.UcenterMemberOrder;
+import com.sunjunjie.commonutils.vo.UcenterMemberOrder;
 import com.sunjunjie.educenter.bean.UcenterMember;
 import com.sunjunjie.educenter.bean.vo.RegistVo;
 import com.sunjunjie.educenter.bean.vo.UcenterMemberVo;
@@ -11,18 +11,18 @@ import com.sunjunjie.educenter.service.UcenterMemberService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 
 import javax.servlet.http.HttpServletRequest;
 
 /**
  * <p>
- * 会员表 前端控制器
+ * 会员表 controller
  * </p>
  *
- * @author testjava
+ * @author sunjunjie
  * @since 2021-06-22
  */
+
 @RestController
 @RequestMapping("/educenter/member")
 @CrossOrigin
@@ -67,6 +67,7 @@ public class UcenterMemberController {
         return ucenterMemberOrder;
     }
 
+    //查询注册人数
     @GetMapping("countRegister/{day}")
     public R countRegister(@PathVariable String day){
         Integer count = memberService.countRegisterDay(day);

@@ -17,10 +17,10 @@ import java.util.List;
 
 /**
  * <p>
- * 讲师 前端控制器
+ * 讲师controller
  * </p>
  *
- * @author testjava
+ * @author sunjunjie
  * @since 2021-06-10
  */
 @RestController
@@ -48,7 +48,7 @@ public class EduTeacherController {
          }
      }
 
-     //分页
+     //分页查询讲师
      @GetMapping("pageTeacher/{current}/{limit}")
      public R pageListTeacher(@PathVariable long current,
                               @PathVariable long limit){

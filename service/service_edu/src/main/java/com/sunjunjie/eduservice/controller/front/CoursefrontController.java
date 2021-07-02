@@ -1,11 +1,10 @@
 package com.sunjunjie.eduservice.controller.front;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.sunjunjie.commonutils.CourseWebVoOrder;
+import com.sunjunjie.commonutils.vo.CourseWebVoOrder;
 import com.sunjunjie.commonutils.JwtUtils;
 import com.sunjunjie.commonutils.R;
 import com.sunjunjie.eduservice.bean.EduCourse;
-import com.sunjunjie.eduservice.bean.EduTeacher;
 import com.sunjunjie.eduservice.bean.chapter.ChapterVo;
 import com.sunjunjie.eduservice.bean.frontVo.CourseFrontVo;
 import com.sunjunjie.eduservice.bean.frontVo.CourseWebVo;
@@ -17,7 +16,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.xml.ws.RequestWrapper;
 import java.util.List;
 import java.util.Map;
 

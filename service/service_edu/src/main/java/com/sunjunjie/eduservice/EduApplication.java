@@ -7,8 +7,16 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+/**
+ * <p>
+ * edu模块启动类
+ * </p>
+ *
+ * @author sunjunjie
+ * @since 2021-06-10
+ */
+
 @SpringBootApplication
-//为了能够扫描到service_base中的注解
 @ComponentScan(basePackages = {"com.sunjunjie"})
 @EnableDiscoveryClient
 @EnableFeignClients

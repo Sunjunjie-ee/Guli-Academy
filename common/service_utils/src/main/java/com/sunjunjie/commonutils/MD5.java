@@ -3,6 +3,14 @@ package com.sunjunjie.commonutils;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/**
+ * <p>
+ * 密码加密
+ * </p>
+ *
+ * @author sunjunjie
+ * @since 2021-06-20
+ */
 
 public final class MD5 {
 

@@ -17,7 +17,7 @@ import java.util.Map;
  * 讲师 服务实现类
  * </p>
  *
- * @author testjava
+ * @author sunjunjie
  * @since 2021-06-10
  */
 @Service
