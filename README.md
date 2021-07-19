@@ -15,6 +15,16 @@
 ## 项目展示
 
 ![后台展示](show.png)
+## 组织结构
+  + service-edu -------- 课程与讲师管理模块
+  + service-ucenter ---- 登录注册模块
+  + service-vod -------- 视频管理模块
+  + service-msm -------- 邮箱验证模块
+  + service-order ------ 订单模块
+  + service-oss -------- 云存储模块
+  + service-statistics-- 统计管理模块
+  + service-cms -------- banner图管理模块
+  + common ------------- 公用模块
 
 ## 技术选型
 
